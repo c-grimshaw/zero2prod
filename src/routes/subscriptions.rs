@@ -1,10 +1,8 @@
 use actix_web::{web, HttpResponse};
 use chrono::Utc;
-use serde;
 use sqlx::PgPool;
 use uuid::Uuid;
 
-#[allow(dead_code)]
 #[derive(serde::Deserialize)]
 pub struct FormData {
     email: String,
